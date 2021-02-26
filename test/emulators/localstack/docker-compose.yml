@@ -1,0 +1,26 @@
+version: "2.1"
+services:
+  localstack:
+    image: localstack/localstack:latest
+    ports:
+      - "53:53"
+      - "443:443"
+      - "4510-4520:4510-4520"
+      - "4566-4620:4566-4620"
+      - "${PORT_WEB_UI-8080}:${PORT_WEB_UI-8080}"
+    environment:
+      - LOCALSTACK_API_KEY=4ZvTIXLmZk
+      - SERVICES=cognito,cognito-idp,cognito-identity,s3,sns,ses,dynamodb,kinesis,eventbridge,events,secretsmanager,apigateway,sqs
+      - DEBUG=1
+      - DATA_DIR=/tmp/localstack/data
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - DEFAULT_REGION=eu-west-2
+      - AWS_DEFAULT_REGION=eu-west-2
+      - SMTP_HOST=email-smtp.eu-west-2.amazonaws.com
+      - SMTP_USER=AKIAUQUT7Z6YFC6DXWEU
+      - SMTP_PASS=BP/TytPHufrRrOd48Ue/0IHAV5Ha/cr+NdeBUzQn0iFc
+      - SMTP_EMAIL=info@counterweight.org
+      - LAMBDA_BACKEND=http://localhost:8200
+    volumes:
+      - "${TMPDIR:-/tmp/localstack}:/tmp/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"

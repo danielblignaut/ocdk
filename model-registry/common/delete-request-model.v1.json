@@ -1,0 +1,12 @@
+{
+  "title": "delete-request-model.v1",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

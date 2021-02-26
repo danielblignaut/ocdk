@@ -1,0 +1,22 @@
+{
+  "title": "base-model.v1",
+  "type": "object",
+  "properties": {
+    "__typename": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "__typename",
+    "createdAt",
+    "updatedAt"
+  ]
+}

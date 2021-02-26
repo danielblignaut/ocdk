@@ -1,0 +1,8 @@
+{
+  "title": "event-create-request-model.v1",
+  "allOf": [
+    {
+      "$ref": "./event-base-model.v1.json"
+    }
+  ]
+}

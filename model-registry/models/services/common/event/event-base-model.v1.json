@@ -1,0 +1,44 @@
+{
+  "title": "event-base-model.v1",
+  "type": "object",
+  "properties": {
+    "applicationVersion": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "object": {
+          "type": "object"
+        },
+        "previousAttributes": {
+          "type": "object"
+        }
+      }
+    },
+    "type": {
+      "type": "string"
+    },
+    "medium": {
+      "type": "string",
+      "enum": [
+        "DYNAMODB",
+        "S3",
+        "EVENT_BRIDGE"
+      ]
+    },
+    "source": {
+      "type": "string"
+    },
+    "mediumId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "applicationVersion",
+    "data",
+    "type",
+    "medium",
+    "source"
+  ]
+}

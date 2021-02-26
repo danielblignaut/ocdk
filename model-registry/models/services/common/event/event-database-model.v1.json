@@ -1,0 +1,13 @@
+{
+  "title": "event-database-model.v1",
+  "dynamodb_model": true,
+  "allOf": [
+    {
+      "$ref": "../../../../common/dynamodb.v1.json"
+    },
+    {
+      "$ref": "./event-base-model.v1.json"
+    }
+  ],
+  "description": "${pk} = uuid\n${sk} = uuid"
+}

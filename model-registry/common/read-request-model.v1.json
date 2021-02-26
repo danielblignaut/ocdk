@@ -1,0 +1,13 @@
+{
+  "title": "read-request-model.v1",
+  "type": "object",
+  "x-examples": {},
+  "properties": {
+    "id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

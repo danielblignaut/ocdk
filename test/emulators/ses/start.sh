@@ -1,0 +1,1 @@
+npx aws-ses-local --clean --outputDir ./output --port 9001

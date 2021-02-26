@@ -1,0 +1,22 @@
+{
+	"name": "@ocdk/function-dynamodb-stream-processor",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "npx tsc -p tsconfig.build.json",
+		"clean:light": "rm -rf ./dist && rm -rf ./tsconfig.build.tsbuildinfo",
+		"clean:full": "yarn run clean:light && rm -rf ./node_modules"
+	},
+	"dependencies": {
+		"@ocdk/library-errors": "^1.0.0",
+		"@ocdk/library-function-event-source": "^1.0.0",
+		"aws-lambda": "^1.0.6",
+		"aws-sdk": "^2.852.0",
+		"source-map-support": "^0.5.19",
+		"yup": "^0.32.9"
+	},
+	"devDependencies": {
+		"@types/aws-lambda": "^8.10.72"
+	}
+}

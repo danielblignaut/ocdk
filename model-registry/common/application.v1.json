@@ -1,0 +1,19 @@
+{
+  "title": "application.v1",
+  "allOf": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    {
+      "$ref": "./base.v1.json"
+    }
+  ]
+}
