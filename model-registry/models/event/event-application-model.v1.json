@@ -6,7 +6,7 @@
       "$ref": "./event-base-model.v1.json"
     },
     {
-      "$ref": "../../../../common/application.v1.json"
+      "$ref": "../../common/application.v1.json"
     }
   ]
 }

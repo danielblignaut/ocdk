@@ -3,7 +3,7 @@
   "dynamodb_model": true,
   "allOf": [
     {
-      "$ref": "../../../../common/dynamodb.v1.json"
+      "$ref": "../../common/dynamodb.v1.json"
     },
     {
       "$ref": "./event-base-model.v1.json"

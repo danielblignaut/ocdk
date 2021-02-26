@@ -2,7 +2,7 @@
   "title": "event-update-request-model.v1",
   "allOf": [
     {
-      "$ref": "../../../../common/update-request-model.v1.json"
+      "$ref": "../../common/update-request-model.v1.json"
     },
     {
       "type": "object",
